@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docker/1_Introduction.md",
+                "file": "Project_GoogleMeetBot/Possible Implementations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1_Introduction"
+              "title": "Possible Implementations"
             }
           },
           {
@@ -41,16 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docker/Commands Docker CLI.md",
+                "file": "Project_GoogleMeetBot/API-Based Integration.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Commands Docker CLI"
+              "title": "API-Based Integration"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -179,13 +179,23 @@
               "icon": "lucide-list",
               "title": "Outline of Introduction"
             }
+          },
+          {
+            "id": "63434e6168a4b338",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,12 +209,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "53c8e82a39a4c755",
+  "active": "b7b370e1d3735c3c",
   "lastOpenFiles": [
-    "Docker/Docker CLI.md",
-    "Docker/Commands Docker CLI.md",
-    "Docker/2_Quick Start.md",
     "Docker/1_Introduction.md",
+    "Project_GoogleMeetBot/API-Based Integration.md",
+    "Project_GoogleMeetBot/Possible Implementations.md",
+    "Docker/Commands Docker CLI.md",
+    "Project_GoogleMeetBot",
+    "Docker/Docker CLI.md",
+    "Docker/2_Quick Start.md",
     "Docker/Docker Desktop.md",
     "Arquitecturas/Microservices.md",
     "Arquitecturas/Ejemplo de Granular Scaling.md",
