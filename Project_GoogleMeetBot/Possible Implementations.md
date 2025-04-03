@@ -14,10 +14,12 @@ Developing a Google Workspace Add-on can integrate the bot's functionality direc
 #### **Challenges**
 
 - Google Apps Script does **not** allow running external scripts directly from Google Calendar or Meet. However.
+- If the Python script is running on a server and using the same account as the user the Google Meet meeting will **not** be visible on the user's local machine.
 
 #### **Workarounds**
 
 - You can **trigger a remote API or server that runs your Python script**, [[API-Based Integration|more info]].
+- Capture the video feed from the **Google Meet** session running in the headless browser and  **stream it live** to the user’s machine, [[Overview of Web Streaming|more info]].
 
 
 ### 2. **Chrome Extension for Google Meet:** 
