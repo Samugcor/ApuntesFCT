@@ -1,3 +1,5 @@
+
+**The possible implementations listed in this note refer to the use of [this](https://github.com/dhruvldrp9/Google-Meet-Bot) repository to record and generate notes of a Google Meet meeting.**
 ### 1. **Google Workspace Add-on for Google Calendar:**
 
 Developing a Google Workspace Add-on can integrate the bot's functionality directly into Google Calendar. This add-on can provide a seamless interface for users to schedule meetings with automatic recording and summarization features. By utilizing the Apps Script Card service, you can create custom interfaces that appear when users create or view events. This approach ensures that users can enable the bot's features without leaving the Calendar interface, enhancing usability and minimizing steps.
