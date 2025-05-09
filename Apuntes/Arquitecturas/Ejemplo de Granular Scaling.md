@@ -1,3 +1,5 @@
+#apuntes #arquitecturas #fct
+___
 > [!warning]
 > Esta entrada está hecha a partir de una pregunta a chatGPT sobre el ejemplo que Moises dio en la reunión de introducción. El lenguaje puede no ser el más adecuado ni representa las palabras textuales, porque no me acuerdo, pero da un feeling general.
 ### Prompt

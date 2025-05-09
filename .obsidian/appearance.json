@@ -1,3 +1,7 @@
 {
-  "theme": "obsidian"
+  "theme": "moonstone",
+  "enabledCssSnippets": [
+    "dataview_tanles",
+    "dataview_tables"
+  ]
 }

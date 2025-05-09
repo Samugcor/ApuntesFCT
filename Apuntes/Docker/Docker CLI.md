@@ -1,3 +1,6 @@
+#apuntes #docker 
+___
+
 > [!info]
 > The Docker CLI client is included in [[Docker Desktop]]. 
 ## A command center for container management

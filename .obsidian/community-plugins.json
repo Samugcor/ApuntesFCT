@@ -1,4 +1,7 @@
 [
   "obsidian-excalidraw-plugin",
-  "obsidian-git"
+  "obsidian-git",
+  "dynamic-outline",
+  "dataview",
+  "auto-card-link"
 ]

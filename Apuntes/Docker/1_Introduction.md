@@ -2,6 +2,8 @@
 aliases:
   - Docker
 ---
+#apuntes  #docker
+___
 ### What is Docker?
 
 **Docker** is a platform used for developing, shipping, and running applications inside **containers**. Containers are lightweight, portable, and isolated environments that include everything an application needs to run: code, runtime, libraries, and dependencies. Docker helps you create these containers and manage them easily.

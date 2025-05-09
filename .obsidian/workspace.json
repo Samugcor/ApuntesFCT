@@ -4,66 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "1af6253ca0c8c447",
+        "id": "e793bf8cd15551ad",
         "type": "tabs",
         "children": [
           {
-            "id": "f4b382abefcc4f72",
+            "id": "47fe28bd42a657dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Project_GoogleMeetBot/Documentación del proyecto para el cliente.md",
+                "file": "Project_LimeLine/Desarrollo/Pruebas React.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Documentación del proyecto para el cliente"
+              "title": "Pruebas React"
             }
           },
           {
-            "id": "b7b370e1d3735c3c",
+            "id": "cb4d4f9bd4824cc6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docker/1_Introduction.md",
+                "file": "Apuntes/React/State variable.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1_Introduction"
-            }
-          },
-          {
-            "id": "2291f36251a94ca7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Project_GoogleMeetBot/API-Based Integration.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "API-Based Integration"
-            }
-          },
-          {
-            "id": "3688f7cf59982722",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Project_GoogleMeetBot/2_Possible Implementations (deprecated).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2_Possible Implementations (deprecated)"
+              "title": "State variable"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -115,19 +88,8 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
-          },
-          {
-            "id": "ad10164e8034ba4c",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -195,22 +157,31 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docker/Commands Docker CLI.md",
+                "file": "Docker/Introduction.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Commands Docker CLI"
+              "title": "Outline of Introduction"
+            }
+          },
+          {
+            "id": "63434e6168a4b338",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -224,27 +195,43 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ad10164e8034ba4c",
+  "active": "cb4d4f9bd4824cc6",
   "lastOpenFiles": [
-    "Docker/1_Introduction.md",
-    "Project_GoogleMeetBot/(Sucio)Recording splitting and overlapping.md",
-    "Project_GoogleMeetBot/2_Possible Implementations (deprecated).md",
-    "Project_GoogleMeetBot/API-Based Integration.md",
-    "Project_GoogleMeetBot/2_Possible Implementations.md",
-    "Project_GoogleMeetBot/Documentación del proyecto para el cliente.md",
-    "Project_GoogleMeetBot/1_Project MeetBot.md",
-    "Arquitecturas/Microservices.md",
-    "Arquitecturas/Ejemplo de Granular Scaling.md",
-    "Project_GoogleMeetBot/Overview of Web Streaming.md",
-    "Excalidraw/Drawing 2025-04-04 08.18.29.excalidraw.md",
-    "Docker/Commands Docker CLI.md",
-    "Project_GoogleMeetBot/Developing Notes.md",
+    "Apuntes/React/_React.md",
+    "Excalidraw/Drawing 2025-05-09 12.44.22.excalidraw.md",
+    "Project_LimeLine/Desarrollo/Pruebas React.md",
     "Excalidraw",
-    "Project_GoogleMeetBot",
-    "Docker/Docker CLI.md",
-    "Docker/2_Quick Start.md",
-    "Docker/Docker Desktop.md",
-    "Arquitecturas",
-    "Docker"
+    "Project_LimeLine/Lime Line.md",
+    "Apuntes/React/Crear un nuevo Proyecto React.md",
+    "Apuntes/React/useLayoutEffect.md",
+    "Apuntes/React/useEffect vs useLayoutEffect.md",
+    "Apuntes/React/State variable.md",
+    "Apuntes/React/Hook.md",
+    "Apuntes/React/JSX.md",
+    "Apuntes/JS/Spread Operator.md",
+    "Apuntes/JS/Destructuring assignment.md",
+    "✨START POINT.md",
+    "Apuntes/📑Directorio de Apuntes.md",
+    "Apuntes/Docker/Docker Desktop.md",
+    "Apuntes/Docker/Docker CLI.md",
+    "Apuntes/Docker/Commands Docker CLI.md",
+    "Apuntes/Docker/2_Quick Start.md",
+    "Apuntes/Docker/1_Introduction.md",
+    "Apuntes/Conceptos/Shallow copy.md",
+    "Apuntes/Conceptos/Event listener.md",
+    "Apuntes/Arquitecturas/Microservices.md",
+    "Apuntes/Arquitecturas/Ejemplo de Granular Scaling.md",
+    "Apuntes/Conceptos",
+    "Project_LimeLine/Desarrollo/Pruebas Canvas.md",
+    "Apuntes/JS",
+    "Apuntes/React/Cómo compartir datos entre componentes.md",
+    "Apuntes/React/React - Cómo crear y anidar componentes.md",
+    "Apuntes/React",
+    "_templates",
+    "Project_LimeLine/Desarrollo",
+    "Apuntes",
+    "Project_LimeLine",
+    "_Excalidraw",
+    "Project_GoogleMeetBot"
   ]
 }

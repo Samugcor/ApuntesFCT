@@ -1,0 +1,40 @@
+.dataview.table-view-table{
+    
+    background-color: #8a5cf511;
+   border-radius: 5px;
+   border-collapse: separate;
+   border-spacing: 0;
+
+}
+
+.dataview.table-view-table td{
+    padding: 13px;
+}
+.dataview.table-view-table th{
+
+    padding: 13px;
+    border-bottom: 2px solid var(--color-base-30);
+    font-weight: 400;
+    font-size: var(--font-text-size);
+    color: var(--color-base-60);
+    text-align: left;
+    vertical-align: bottom;
+
+}
+/* Add inner cell borders */
+
+.dataview.table-view-table td {
+  border-right: 2px solid var(--color-base-30);
+  border-bottom: 2px solid var(--color-base-30);
+}
+
+/* Remove right border from last column */
+.dataview.table-view-table tr td:last-child {
+  border-right: none;
+}
+
+/* Remove bottom border from last row */
+.dataview.table-view-table tr:last-child td {
+  border-bottom: none;
+}
+
