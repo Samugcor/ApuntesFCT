@@ -1,4 +1,20 @@
 ___
+# Matemáticas
+
+```dataview
+LIST
+FROM #mates AND #apuntes 
+```
+# Conceptos base
+```dataview
+LIST
+FROM #conceptos AND #apuntes 
+```
+# Conceptos base
+```dataview
+LIST
+FROM #conceptos AND #apuntes 
+```
 # Conceptos base
 ```dataview
 LIST
@@ -25,6 +41,13 @@ FROM #js AND #apuntes
 ```dataview
 LIST
 FROM #apuntes AND #react 
+```
+
+___
+# HTML Y CSS
+```dataview
+LIST
+FROM #apuntes AND #css 
 ```
 
 ___

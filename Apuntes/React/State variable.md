@@ -79,3 +79,92 @@ Otro caso en el que se agrupan los datos en un objeto o una matriz es cuando no 
 Ponemos por ejemplo un formulario de comentarios de un hotel con las variables de estado `isSending` e `isSent`, __esta combinación deja abierta la posibilidad de estados "imposibles".__ Por ejemplo, si se te olvida llamar a `setIsSent` y `setIsSending` juntos, podría terminar en una situación en la que `isSending` e `isSent` sean true al mismo tiempo. Cuanto más complejo sea el componente, más difícil será comprender qué sucedió.
 
 Dado que `isSending` e `isSent` nunca deben ser `true` al mismo tiempo, es mejor reemplazarlas con una variable de estado `status` que puede tomar uno de _tres_ estados válidos: `'typing'` (inicial), `'sending'` y `'sent'.
+
+## Evitar estados redundantes
+
+Si puede calcular alguna información de las propiedades del componente, no  se debe colocar esa información en una variable de estado. Por ejemplo, si tenemos las variables de estado: `firstName`, `lastName` y `fullName`, esta última sería redundante. Siempre se puede calcular `fullName` a partir de `firstName` y `lastName`.
+
+Aquí, `fullName` no es una variable de estado. Se calcula durante el renderizado:
+
+```jsx
+const fullName = firstName + ' ' + lastName;
+```
+
+Por lo tanto, los controladores de cambios no necesitan hacer nada especial para actualizarlo. Al llamar a `setFirstName` o `setLastName`, **se activa un nuevo renderizado** y, a continuación, se calcula el siguiente `fullName` a partir de los datos actualizados.
+
+## Evitar duplicaciones en el estado
+
+```jsx
+import { useState } from 'react';
+
+const initialItems = [
+  { title: 'pretzels', id: 0 },
+  { title: 'crispy seaweed', id: 1 },
+  { title: 'granola bar', id: 2 },
+];
+
+export default function Menu() {
+  const [items, setItems] = useState(initialItems);
+  const [selectedItem, setSelectedItem] = useState(
+    items[0]
+  );
+
+  function handleItemChange(id, e) {
+    setItems(items.map(item => {
+      if (item.id === id) {
+        return {
+          ...item,
+          title: e.target.value,
+        };
+      } else {
+        return item;
+      }
+    }));
+  }
+
+  return (
+    <>
+      <h2>What's your travel snack?</h2> 
+      <ul>
+        {items.map((item, index) => (
+          <li key={item.id}>
+            <input
+              value={item.title}
+              onChange={e => {
+                handleItemChange(item.id, e)
+              }}
+            />
+            {' '}
+            <button onClick={() => {
+              setSelectedItem(item);
+            }}>Choose</button>
+          </li>
+        ))}
+      </ul>
+      <p>You picked {selectedItem.title}.</p>
+    </>
+  );
+}
+```
+
+Actualmente, almacena el elemento seleccionado como un objeto en la variable de estado `selectedItem`. Sin embargo, esto no está bien: **el contenido de `selectedItem` es el mismo objeto que uno de los elementos de la lista de elementos. Esto significa que la información sobre el elemento se duplica en dos lugares.** **Si los datos del elemento cambian en la lista no cambiarán en `selectedItem`**. Por ello lo mejor es **guardar el id del objeto y realizar una búsqueda de coincidencia en la lista**.
+
+El estado solía duplicarse así:
+
+```jsx
+items = [{ id: 0, title: 'pretzels'}, ...]
+selectedItem = {id: 0, title: 'pretzels'}
+```
+
+Pero después del cambio, queda así:
+
+```jsx
+items = [{ id: 0, title: 'pretzels'}, ...]
+selectedId = 0
+```
+
+**Ahora, si edita el elemento seleccionado, el mensaje a continuación se actualizará inmediatamente. Esto se debe a que `setItems` activa un nuevo renderizado, y `items.find(...) `encuentra el elemento con el título actualizado.**
+
+## Evitar estados muy anidados
+
+Los estados muy anidados son complicados de actualizar y generan problemas, como por ejemplo las [[Shallow copy]]. Para evitarlo lo más sencillo es normalizar los datos. Consulta más infrmación en este [enlace](https://react.dev/learn/choosing-the-state-structure#:~:text=calculated%20during%20render.-,Avoid%20deeply%20nested%20state,-Imagine%20a%20travel)

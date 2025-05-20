@@ -33,6 +33,12 @@ favicon: https://www.youtube.com/s/desktop/3747f4fc/img/logos/favicon_32x32.png
 image: https://i.ytimg.com/vi/6arkndScw7A/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDPBDP9m7JVpOgA-03Pkxz4hzdK5A&days_since_epoch=20212
 ```
 > **Contents:**
+>  - Dibujar elementos y cambiar entre ellos
+>  - Mover elementos
 > 
 # Notas
 **09-05-2025:** Hemos hecho un canvas en el que puedes dibujar líneas.
+__13-05-2025:__ Hemos hecho un menu flotante y podemos dibujar rectángulos
+**16-05-2025:** Trabajando en [[Como seleccionar un elemento dibujado en canvas]]
+**20-05-2025**: Darte cuenta de que no sabes hacer matemáticas y pasar la tarde buscando [[Como saber si un punto está en un segmento]].
+

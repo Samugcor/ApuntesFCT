@@ -210,4 +210,3 @@ function MyButton() {
 }
 ```
 
-## Cómo compartir datos entre componentes
