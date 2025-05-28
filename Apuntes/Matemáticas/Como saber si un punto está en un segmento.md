@@ -2,9 +2,9 @@
 ___
 Hay dos formas de saber si un punto (`p`) está en un segmento (entre `a` y `b`).
 
-# 1. [[Colinearity]] y Bounding Box
+# 1. [[Colinealidad]] y Bounding Box
 
-1. Primero miramos si `p` está en la línea que se traza entre `a` y `b`. Esto podemos hacerlo con la [[Colinearity]].
+1. Primero miramos si `p` está en la línea que se traza entre `a` y `b`. Esto podemos hacerlo con la [[Colinealidad]].
 2. Comprueba que `p.x` está entre `a.x` y `b.x`. 
 3. Comprueba que `p.y` está entre `a.y` y `b.y`.
 

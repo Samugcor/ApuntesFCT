@@ -1,24 +1,15 @@
 ___
 # Matemáticas
-
 ```dataview
 LIST
 FROM #mates AND #apuntes 
+SORT file.name ASC
 ```
 # Conceptos base
 ```dataview
 LIST
 FROM #conceptos AND #apuntes 
-```
-# Conceptos base
-```dataview
-LIST
-FROM #conceptos AND #apuntes 
-```
-# Conceptos base
-```dataview
-LIST
-FROM #conceptos AND #apuntes 
+SORT file.name ASC
 ```
 
 ___
@@ -26,6 +17,7 @@ ___
 ```dataview
 LIST
 FROM #apuntes AND #arquitecturas 
+SORT file.name ASC
 ```
 
 ___
@@ -35,12 +27,14 @@ ___
 ```dataview
 LIST
 FROM #js AND #apuntes 
+SORT file.name ASC
 ```
 ### Librerías JS
 #### React
 ```dataview
 LIST
 FROM #apuntes AND #react 
+SORT file.name ASC
 ```
 
 ___
@@ -48,6 +42,7 @@ ___
 ```dataview
 LIST
 FROM #apuntes AND #css 
+SORT file.name ASC
 ```
 
 ___
@@ -56,4 +51,5 @@ ___
 ```dataview
 LIST
 FROM #apuntes AND #docker 
+SORT file.name ASC
 ```

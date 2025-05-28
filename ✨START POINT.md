@@ -1,8 +1,7 @@
 ___
 # ¿Qué estaba haciendo?
 
-Arreglar la funcion para seleccionar un elemento con lo aprendido en [[Como saber si un punto está en un segmento]]
-
+Que coño hago con los ids de los elementos, cuando los creo cuando los muevo....
 
 ___
 # Cosas que hacer
